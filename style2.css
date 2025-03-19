@@ -1,0 +1,48 @@
+/* General Page Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+/* Slider Container */
+.slider-container {
+    width: 80%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Slider */
+.card-slider {
+    display: flex;
+    gap: 20px;
+}
+
+/* Individual Card */
+.card {
+    min-width: 250px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .slider-container {
+        width: 95%;
+    }
+
+    .card {
+        min-width: 200px;
+    }
+}

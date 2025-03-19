@@ -1,0 +1,66 @@
+/* General Page Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0e5ec;
+    font-family: Arial, sans-serif;
+}
+
+/* Login Container */
+.login-container {
+    background: #e0e5ec;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px #b8bcc2, -10px -10px 20px #ffffff;
+    text-align: center;
+}
+
+/* Title */
+h2 {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+.input-box {
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 250px;
+    padding: 12px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background: #e0e5ec;
+    box-shadow: inset 5px 5px 10px #b8bcc2, inset -5px -5px 10px #ffffff;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Input Focus Effect */
+.input-box input:focus {
+    box-shadow: inset 2px 2px 5px #b8bcc2, inset -2px -2px 5px #ffffff;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    background: #e0e5ec;
+    color: #555;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px #b8bcc2, -5px -5px 10px #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Button Hover Effect */
+button:hover {
+    box-shadow: inset 5px 5px 10px #b8bcc2, inset -5px -5px 10px #ffffff;
+}
