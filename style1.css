@@ -1,66 +1,211 @@
-/* General Page Styling */
+/* General Styles */
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #e0e5ec;
+    background: #e0e5ec;
     font-family: Arial, sans-serif;
 }
 
-/* Login Container */
-.login-container {
+/* Container */
+.container {
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
     background: #e0e5ec;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 10px 10px 20px #b8bcc2, -10px -10px 20px #ffffff;
+    box-shadow: 8px 8px 16px #b8bec4, -8px -8px 16px #ffffff;
     text-align: center;
 }
 
-/* Title */
+/* Form Box */
+.form-box {
+    width: 100%;
+}
+
 h2 {
-    color: #555;
     margin-bottom: 20px;
 }
 
-/* Input Fields */
+
 .input-box {
-    margin-bottom: 20px;
+    position: relative;
+    margin: 15px 0;
 }
 
 .input-box input {
-    width: 250px;
-    padding: 12px;
-    border: none;
-    outline: none;
-    border-radius: 30px;
-    background: #e0e5ec;
-    box-shadow: inset 5px 5px 10px #b8bcc2, inset -5px -5px 10px #ffffff;
-    font-size: 16px;
-    text-align: center;
-}
-
-/* Input Focus Effect */
-.input-box input:focus {
-    box-shadow: inset 2px 2px 5px #b8bcc2, inset -2px -2px 5px #ffffff;
-}
-
-/* Button Styling */
-button {
     width: 100%;
-    padding: 12px;
+    padding: 5px;
     border: none;
-    border-radius: 30px;
+    border-radius: 5px;
     background: #e0e5ec;
-    color: #555;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 5px 5px 10px #b8bcc2, -5px -5px 10px #ffffff;
-    transition: all 0.3s ease-in-out;
+    box-shadow: inset 5px 5px 10px #b8bec4, inset -5px -5px 10px #ffffff;
+    outline: none;
+    font-size: 16px;
 }
 
-/* Button Hover Effect */
-button:hover {
-    box-shadow: inset 5px 5px 10px #b8bcc2, inset -5px -5px 10px #ffffff;
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
 }
+
+.btn, .google-btn, .facebook-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #e0e5ec;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #b8bec4, -5px -5px 10px #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn:active, .google-btn:active, .facebook-btn:active {
+    box-shadow: inset 5px 5px 10px #b8bec4, inset -5px -5px 10px #ffffff;
+}
+
+/* Social Login Buttons */
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.google-btn {
+    background: white;
+    color: #333;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+.google-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.facebook-btn {
+    background: #3b5998;
+    color: white;
+    transition: 0.3s;
+}
+
+.facebook-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+
+.google-btn:hover {
+    background: #f1f1f1;
+}
+
+.facebook-btn:hover {
+    background: #2e4a87;
+}
+
+
+.toggle-text {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.toggle-text a {
+    color: #3498db;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+body.dark {
+    background: #1f1f1f;
+  }
+  
+  body.dark .login-container {
+    background: #2c2c2c;
+    box-shadow: 10px 10px 20px #141414, -10px -10px 20px #3a3a3a;
+  }
+  
+  body.dark input,
+  body.dark button {
+    background: #2c2c2c;
+    box-shadow: inset 6px 6px 10px #1a1a1a, inset -6px -6px 10px #3a3a3a;
+    color: black;
+  }
+  
+  body.dark input:focus {
+    box-shadow: inset 3px 3px 5px #1a1a1a, inset -3px -3px 5px #3a3a3a;
+  }
+  
+  body.dark button:hover {
+    box-shadow: inset 5px 5px 10px #1a1a1a, inset -5px -5px 10px #3a3a3a;
+  }
+  
+  body.dark .error-msg {
+    color: #ff8080;
+  }
+  
+  .dark-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  body.dark .dark-toggle label {
+    color: black;
+  }
+ 
+
+body.dark {
+    background: #1f1f1f;
+    color: white;
+  }
+  
+  body.dark .container {
+    background: #2c2c2c;
+    box-shadow: 10px 10px 20px #141414, -10px -10px 20px #3a3a3a;
+  }
+  
+  body.dark input,
+  body.dark button {
+    background: #2c2c2c;
+    box-shadow: inset 6px 6px 10px #1a1a1a, inset -6px -6px 10px #3a3a3a;
+    color: white;
+  }
+  
+  body.dark input::placeholder {
+    color: #aaa;
+  }
+  
+  body.dark button:hover {
+    box-shadow: inset 5px 5px 10px #1a1a1a, inset -5px -5px 10px #3a3a3a;
+  }
+  
+  body.dark .error-message {
+    color: #ff8080;
+  }
+  
+  .dark-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 14px;
+  }
+  
